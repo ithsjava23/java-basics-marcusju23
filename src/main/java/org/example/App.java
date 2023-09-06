@@ -19,6 +19,7 @@ public class App {
         System.out.println("Välj ett alternativ");
         String menuOption = sc.nextLine();
 
+//        test
 
         switch (menuOption) {
             case '1' -> {
