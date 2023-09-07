@@ -13,7 +13,7 @@ public class App {
 
             switch (menuOption) {
                 case "1" -> inputData();
-                case "2" -> minMaxMid();
+                case "2" -> "".isEmpty();
                 case "3" -> "".isEmpty();
                 case "4" -> "".isEmpty();
                 case "e" -> {
@@ -27,14 +27,14 @@ public class App {
 
     public static void showMenu() {
         System.out.print("""
-                    Elpriser
-                    ========
-                    1. Inmatning
-                    2. Min, Max och Medel
-                    3. Sortera
-                    4. Bästa Laddningstid (4h)
-                    e. Avsluta
-                    """);
+                Elpriser
+                ========
+                1. Inmatning
+                2. Min, Max och Medel
+                3. Sortera
+                4. Bästa Laddningstid (4h)
+                e. Avsluta
+                """);
     }
 
     public static void inputData() {
@@ -49,7 +49,7 @@ public class App {
         }
     }
 
-    public static void printMinMaxMid(){
+    public static void printMinMaxMid() {
         System.out.println("Lägsta pris: 02-03, 1 öre/kWh");
         System.out.println("Högsta pris: 00-01, 100 öre/kWh");
         System.out.println("Medelpris: 13,38 öre/kWh");
@@ -59,5 +59,6 @@ public class App {
 
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
+        }
     }
 }
