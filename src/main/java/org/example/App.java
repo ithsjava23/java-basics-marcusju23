@@ -1,11 +1,13 @@
 package org.example;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+        Locale.setDefault(Locale.forLanguageTag("sv-SE"));
         while (true) {
             showMenu();
             System.out.print("\nVälj ett alternativ ");
